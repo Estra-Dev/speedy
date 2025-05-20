@@ -31,7 +31,7 @@ const CheckoutForm = () => {
       clientSecret: secretKey,
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/",
+        return_url: process.env.NEXT_PUBLIC_APP_URL,
       },
     });
   };
